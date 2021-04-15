@@ -1,11 +1,16 @@
 ﻿using System;
 using System.Data;
-using System.Reflection;
 
-namespace PropertyGridSqlServer.Classes
+namespace BaseLibrary.Classes
 {
     public class ObjectHelpers
     {
+        /// <summary>
+        /// Convert <see cref="DataRow"/> to type
+        /// </summary>
+        /// <typeparam name="T">Type to convert <see cref="DataRow"/> to</typeparam>
+        /// <param name="row"><see cref="DataRow"/> to convert</param>
+        /// <returns>Instance of T</returns>
         public static T CreateItemFromRow<T>(DataRow row) where T : new()
         {
             T item = new T();

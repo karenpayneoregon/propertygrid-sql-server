@@ -12,6 +12,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyGridSqlServer", "PropertyGridSqlServer\PropertyGridSqlServer.csproj", "{0FCD4AC8-CEDC-403F-B339-47CE45A7276C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NET Core", ".NET Core", "{CEFFE760-642E-43D5-9969-01703491C7C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseLibrary", "BaseLibrary\BaseLibrary.csproj", "{59EF8C49-6ED0-4BAE-875A-FB0014F0ECEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{D72D6B23-238A-4C98-811C-25D4F9F745D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,12 +32,22 @@ Global
 		{0FCD4AC8-CEDC-403F-B339-47CE45A7276C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FCD4AC8-CEDC-403F-B339-47CE45A7276C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FCD4AC8-CEDC-403F-B339-47CE45A7276C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59EF8C49-6ED0-4BAE-875A-FB0014F0ECEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59EF8C49-6ED0-4BAE-875A-FB0014F0ECEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59EF8C49-6ED0-4BAE-875A-FB0014F0ECEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59EF8C49-6ED0-4BAE-875A-FB0014F0ECEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D72D6B23-238A-4C98-811C-25D4F9F745D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72D6B23-238A-4C98-811C-25D4F9F745D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72D6B23-238A-4C98-811C-25D4F9F745D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72D6B23-238A-4C98-811C-25D4F9F745D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0FCD4AC8-CEDC-403F-B339-47CE45A7276C} = {9739B21B-DC99-4B85-8B7A-1AD45032280B}
+		{59EF8C49-6ED0-4BAE-875A-FB0014F0ECEB} = {CEFFE760-642E-43D5-9969-01703491C7C0}
+		{D72D6B23-238A-4C98-811C-25D4F9F745D4} = {CEFFE760-642E-43D5-9969-01703491C7C0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {944A6DE2-01F4-40AB-828E-B75A96A1BDB1}

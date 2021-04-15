@@ -50,7 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\DateTimePickerEditor.cs" />
-    <Compile Include="Classes\ObjectHelpers.cs" />
     <Compile Include="Classes\SqlOperations.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
