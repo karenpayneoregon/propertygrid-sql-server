@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BaseLibrary.Classes;
 
-namespace PropertyGridSqlServer.Classes
+namespace BaseLibrary.Classes
 {
     public class SqlOperations
     {
@@ -14,11 +10,11 @@ namespace PropertyGridSqlServer.Classes
             "Data Source=.\\SQLEXPRESS;Initial Catalog=NorthWindAzure1;" +
             "Integrated Security=True";
 
-        public static List<Product> Read()
+        public static List<Product> Read(int topCount = 5)
         {
             var list = new List<Product>();
             var selectStatement = 
-                "SELECT TOP (5) ProductID, ProductName, QuantityPerUnit, UnitPrice, UnitsInStock, ReorderLevel, DiscontinuedDate " + 
+                $"SELECT TOP ({topCount}) ProductID, ProductName, QuantityPerUnit, UnitPrice, UnitsInStock, ReorderLevel, DiscontinuedDate " + 
                 "FROM .dbo.Products " +
                 "WHERE dbo.Products.DiscontinuedDate IS NOT NULL ORDER BY ProductName;";
 
@@ -45,9 +41,9 @@ namespace PropertyGridSqlServer.Classes
             return list;
         }
         /// <summary>
-        /// Save one product
+        /// Save one <see cref="Product"/>
         /// </summary>
-        /// <param name="product"></param>
+        /// <param name="product"><see cref="Product"/> to save to database</param>
         public static bool SaveProduct(Product product)
         {
             var updateStatement = 
@@ -76,6 +72,7 @@ namespace PropertyGridSqlServer.Classes
                     
             return cmd.ExecuteNonQuery() == 1;
         }
+        
         /// <summary>
         /// Save list of products
         /// </summary>
