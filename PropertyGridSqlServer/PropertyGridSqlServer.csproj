@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\AppProperties.cs" />
+    <Compile Include="Classes\AppPropertiesOperations.cs" />
     <Compile Include="Classes\DateTimePickerEditor.cs" />
     <Compile Include="Classes\SqlOperations.cs" />
     <Compile Include="Form1.cs">
@@ -91,7 +93,8 @@
   <ItemGroup>
     <Content Include="DetailView.ico" />
     <None Include="assets\Save_16x.png" />
-    <Content Include="Scripts\datascript.sql" />
+    <Content Include="Scripts\mfgst.sql" />
+    <Content Include="Scripts\NorthDatascript.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
