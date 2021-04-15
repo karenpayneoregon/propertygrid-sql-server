@@ -2,6 +2,8 @@
 
 Code sample for reading data from `SQL-Server` database table into a `PropertyGrid` along with save current row in the `PropertyGrid`.
 
+:yellow_circle: SQL client data provider
+
 - Note that only enough coding has been done to provide a code base to work from. 
 - All database operations are performed in a class against a class rather than using a [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) as a DataTable is overkill for this.
 - A [BindingSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.bindingsource?view=net-5.0) makes life easier, read the docs on BindingSource.
